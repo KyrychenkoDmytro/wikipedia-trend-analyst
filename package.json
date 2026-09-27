@@ -1,0 +1,26 @@
+{
+  "name": "wikipedia-trend-analyst",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "description": "Agent Skill: fetches Wikipedia pageview data, computes trend/confidence stats, and generates a one-page PDF report to support B2C product decisions (topics, languages).",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "cli": "tsx scripts/cli.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx test/stats.test.ts && tsx test/wikimedia-client.test.ts && tsx test/pipeline.smoke.ts"
+  },
+  "dependencies": {
+    "commander": "^12.1.0",
+    "pdfkit": "^0.15.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.5",
+    "@types/pdfkit": "^0.13.5",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.3"
+  }
+}

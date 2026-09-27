@@ -1,0 +1,17 @@
+{
+  "name": "agent-harness",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Minimal custom agent loop for testing wikipedia-trend-analyst against a real OpenRouter model with tool calling - not part of the skill itself.",
+  "scripts": {
+    "start": "tsx run-agent.ts",
+    "test": "tsx test/harness.smoke.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.5",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.3"
+  }
+}
